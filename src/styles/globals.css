@@ -11,7 +11,7 @@ body {
   /*font-family: 'Poppins', sans-serif;*/
   font-family: "Nunito Sans", sans-serif;
   /*background: #fafafa;*/
-  background-color: #f5f9fc;
+  background-color: #ffffff;
 }
 
 a,
@@ -28,10 +28,11 @@ a:focus {
 .sidebar {
   min-width: 250px;
   max-width: 250px;
-  background: #354052;
+  background: #ffffff;
   color: #adb5bd;
   margin-left: -250px;
   transition: all 0.5s;
+  border-right: 2px solid #ebebeb;
 }
 
 .sidebar.is-open {
@@ -40,12 +41,12 @@ a:focus {
 }
 
 .sidebar-header {
-  background: #313b4c;
-  color: #adb5bd;
+  background: #ffffff;
+  color: #2d5a77;
 }
 
 .sidebar-header h3 {
-  color: #fff;
+  color: #2d5a77;
   padding: 1em;
 }
 
@@ -72,7 +73,7 @@ a:focus {
 
 .nav-item.active {
   color: #e9ecef;
-  background: #2d3646 !important;
+  background: #f0f7ff !important;
 }
 
 .nav-item:hover {
@@ -138,4 +139,12 @@ li a.dropdown-toggle::after {
     position: relative;
     left: 68%;
   }
+}
+
+.nav-link {
+  color: #c7c7c7 !important;
+}
+
+.cl-tb {
+  color: #adb5bd !important;
 }

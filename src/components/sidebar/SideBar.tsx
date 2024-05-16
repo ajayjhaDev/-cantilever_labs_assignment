@@ -16,6 +16,7 @@ import {
 import SubMenu from "./SubMenu";
 import { Nav, Button } from "react-bootstrap";
 import classNames from "classnames";
+import { FaCloud } from "react-icons/fa";
 
 interface SideBarProps {
   isOpen: boolean;
@@ -29,49 +30,62 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, toggle }) => {
         <Button
           variant="link"
           onClick={toggle}
-          style={{ color: "#fff" }}
+          style={{ color: "#6098db" }}
           className="mt-4"
         >
           <FontAwesomeIcon icon={faTimes} pull="right" size="xs" />
         </Button>
-        <h3>react-bootstrap sidebar</h3>
+        <div className="d-flex justify-content-between align-items-center">
+          <div className="ms-3">
+            <FaCloud fontSize={70} />
+          </div>
+
+          <div style={{ position: "relative", right: "20px", top: "6px" }}>
+            <h3>cloudcash</h3>
+          </div>
+        </div>
       </div>
 
       <Nav className="flex-column pt-2">
-        <p className="ms-3">Heading</p>
-
         <Nav.Item className="active">
           <Nav.Link href="#">
             <FontAwesomeIcon icon={faHome} className="me-2" />
-            Home
+            Overview
           </Nav.Link>
         </Nav.Item>
 
         <Nav.Item>
           <Nav.Link href="#">
             <FontAwesomeIcon icon={faBriefcase} className="me-2" />
-            About
+            Transactions
           </Nav.Link>
         </Nav.Item>
 
         <Nav.Item>
           <Nav.Link href="#">
             <FontAwesomeIcon icon={faImage} className="me-2" />
-            Portfolio
+            Cards
           </Nav.Link>
         </Nav.Item>
 
         <Nav.Item>
           <Nav.Link href="#">
             <FontAwesomeIcon icon={faQuestion} className="me-2" />
-            FAQ
+            Invoices
           </Nav.Link>
         </Nav.Item>
 
         <Nav.Item>
           <Nav.Link href="#">
             <FontAwesomeIcon icon={faPaperPlane} className="me-2" />
-            Contact
+            Goals
+          </Nav.Link>
+        </Nav.Item>
+
+        <Nav.Item>
+          <Nav.Link href="#">
+            <FontAwesomeIcon icon={faPaperPlane} className="me-2" />
+            Settings
           </Nav.Link>
         </Nav.Item>
       </Nav>
