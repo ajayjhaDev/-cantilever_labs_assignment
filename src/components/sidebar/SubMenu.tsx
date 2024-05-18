@@ -27,9 +27,9 @@ const SubMenu: React.FC<SubMenuProps> = ({
   };
 
   return (
-    <Nav.Item className={classNames({ open: !collapsed })}>
+    <Nav.Item>
       <Accordion>
-        <Accordion.Toggle
+        <Accordion
           as={Nav.Link}
           variant="link"
           eventKey="0"
@@ -42,7 +42,7 @@ const SubMenu: React.FC<SubMenuProps> = ({
             icon={collapsed ? faCaretDown : faCaretUp}
             className="float-right"
           />
-        </Accordion.Toggle>
+        </Accordion>
 
         <Accordion.Collapse eventKey="0">
           <nav className="nav flex-column">
