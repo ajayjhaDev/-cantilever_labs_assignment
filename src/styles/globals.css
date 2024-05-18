@@ -33,6 +33,7 @@ a:focus {
   margin-left: -250px;
   transition: all 0.5s;
   border-right: 2px solid #ebebeb;
+  height: 1200px;
 }
 
 .sidebar.is-open {
@@ -147,4 +148,28 @@ li a.dropdown-toggle::after {
 
 .cl-tb {
   color: #adb5bd !important;
+}
+
+.progress-bar {
+  background-color: #1f80c2 !important;
+}
+
+.vl {
+  border-left: 1px solid rgb(204, 206, 204);
+  height: 300px;
+}
+
+.css-1np86d-MuiLinearProgress-root {
+  height: 12px !important;
+  border-radius: 20px;
+}
+
+.css-1hxt08m-MuiLinearProgress-root {
+  height: 12px !important;
+  border-radius: 20px;
+}
+
+.css-eglki6-MuiLinearProgress-root {
+  height: 12px !important;
+  border-radius: 20px;
 }

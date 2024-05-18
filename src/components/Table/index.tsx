@@ -26,7 +26,13 @@ const rows = [
 
 export default function BasicTable() {
   return (
-    <TableContainer component={Paper}>
+    <TableContainer
+      component={Paper}
+      style={{
+        boxShadow:
+          "0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19)",
+      }}
+    >
       <h4 className="p-2">Transactions history</h4>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>

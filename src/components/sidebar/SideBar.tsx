@@ -17,6 +17,8 @@ import SubMenu from "./SubMenu";
 import { Nav, Button } from "react-bootstrap";
 import classNames from "classnames";
 import { FaCloud } from "react-icons/fa";
+import { IoCardSharp } from "react-icons/io5";
+import { IoSettingsOutline } from "react-icons/io5";
 
 interface SideBarProps {
   isOpen: boolean;
@@ -56,7 +58,7 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, toggle }) => {
 
         <Nav.Item>
           <Nav.Link href="#">
-            <FontAwesomeIcon icon={faBriefcase} className="me-2" />
+            <IoCardSharp className="me-2" />
             Transactions
           </Nav.Link>
         </Nav.Item>
@@ -84,7 +86,7 @@ const SideBar: React.FC<SideBarProps> = ({ isOpen, toggle }) => {
 
         <Nav.Item>
           <Nav.Link href="#">
-            <FontAwesomeIcon icon={faPaperPlane} className="me-2" />
+            <IoSettingsOutline className="me-2" />
             Settings
           </Nav.Link>
         </Nav.Item>

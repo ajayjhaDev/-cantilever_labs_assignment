@@ -21,7 +21,7 @@ const NavBar: React.FC<NavBarProps> = ({ toggle }) => {
         <FontAwesomeIcon icon={faAlignLeft} />
       </Button>
       <div className="ms-4">
-        <h1>Weekly sumup</h1>
+        <h1 style={{ color: "#404040" }}>Weekly sumup</h1>
         <p style={{ color: "#adb5bd" }}>
           Get summary of your weekly online transactions here.
         </p>
