@@ -10,7 +10,7 @@ import FormControl from "@mui/material/FormControl";
 const App: React.FC = () => {
   return (
     <>
-      <main className="d-flex">
+      <main className="d-flex main-transaction">
         <div
           style={{
             width: "60%",
@@ -20,6 +20,7 @@ const App: React.FC = () => {
             boxShadow:
               "0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19)",
           }}
+          className="main-transaction-width"
         >
           <div style={{ fontSize: "25px" }} className="mb-3">
             New transaction
@@ -102,7 +103,7 @@ const App: React.FC = () => {
             alignItems: "end",
             padding: "12px",
           }}
-          className="ms-3"
+          className="main-transaction-width ms-md-3 get"
         >
           <h3>Get greate loan!</h3>
         </div>

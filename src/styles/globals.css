@@ -114,7 +114,6 @@ li a.dropdown-toggle::after {
 
 @media only screen and (max-width: 575.98px) {
   body {
-    overflow: hidden;
   }
 
   .content.is-open {
@@ -172,4 +171,40 @@ li a.dropdown-toggle::after {
 .css-eglki6-MuiLinearProgress-root {
   height: 12px !important;
   border-radius: 20px;
+}
+
+@media (max-width: 1200px) {
+  .header-Weekly {
+    display: none !important;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .debit-card-res {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .vl {
+    display: none;
+  }
+
+  .debit-width {
+    width: 100% !important;
+  }
+
+  .main-transaction {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .main-transaction-width {
+    width: 100% !important;
+  }
+
+  .get {
+    margin-top: 10px !important;
+  }
 }

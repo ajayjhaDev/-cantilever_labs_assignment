@@ -20,7 +20,7 @@ const NavBar: React.FC<NavBarProps> = ({ toggle }) => {
       <Button variant="outline-info" onClick={toggle}>
         <FontAwesomeIcon icon={faAlignLeft} />
       </Button>
-      <div className="ms-4">
+      <div className="ms-4 header-Weekly">
         <h1 style={{ color: "#404040" }}>Weekly sumup</h1>
         <p style={{ color: "#adb5bd" }}>
           Get summary of your weekly online transactions here.

@@ -17,7 +17,7 @@ const Content: React.FC<ContentProps> = ({ isOpen, toggle }) => {
   return (
     <Container fluid className={classNames("content", { "is-open": isOpen })}>
       <NavBar toggle={toggle} />
-      <main className="d-flex">
+      <main className="d-flex main-content">
         <section>
           <div>
             <DebitCard />
